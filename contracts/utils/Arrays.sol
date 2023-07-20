@@ -44,9 +44,9 @@ library Arrays {
         // At this point `low` is the exclusive upper bound. We will return the inclusive upper bound.
         if (low > 0 && unsafeAccess(array, low - 1).value == element) {
             return low - 1;
-        } else {
-            return low;
         }
+        
+        return low;
     }
 
     /**
